@@ -9,7 +9,17 @@
 # Используя только атрибуты функции print() вывести первоначальную строку и получившиеся
 # разными способами форматирования через разделитель "<<<>>>", вывод сделать в файл.
 
-input('Введіть два слова')
 
+word_str = input('Введіть два слова: ')
+word_1 = word_str.split()[0]
+word_2 = word_str.split()[1]
+word_change_1 = '! %s %s ?' % (word_1.upper()[::-1], word_2[::-1].capitalize())
+word_change_2 = '! {} {} ?'.format(word_1.upper()[::-1], word_2[::-1].capitalize())
+word_change_3 = f'! {word_1.upper()[::-1]} {word_2[::-1].capitalize()} ?'
 
-print()
+word_file = open('input_words.txt', 'w')
+
+print(word_str, word_1, word_2, word_change_1, word_change_2, word_change_3, sep='<<<>>>', file=word_file)
+# або
+# print(word_str, word_change_1, word_change_2, word_change_3 sep='<<<>>>', file=word_file)
+# не зовсім зрозуміло, чи виводити окремі слова

@@ -6,3 +6,46 @@
 #    точно так же и обе последние переменные необходимо приводить к одному и тому же типу.
 
 
+v_1 = 55
+print(type(v_1))
+print(id(v_1))
+
+v_2 = 55
+print(type(v_2))
+print(id(v_2))
+
+v_3 = 55
+print(type(v_3))
+print(id(v_3))
+
+
+v_1 = list('55')
+print(type(v_1))
+print(id(v_1))
+
+v_2 = list('55')
+print(type(v_2))
+print(id(v_2))
+
+v_3 = list('55')
+print(type(v_3))
+print(id(v_3))
+
+
+
+var_1 = {'a'}
+print(type(var_1))
+print(id(var_1))
+
+var_2 = {'a'}
+print(type(var_2))
+print(id(var_2))
+
+
+var_1 = str('a')
+print(type(var_1))
+print(id(var_1))
+
+var_2 = str('a')
+print(type(var_2))
+print(id(var_2))

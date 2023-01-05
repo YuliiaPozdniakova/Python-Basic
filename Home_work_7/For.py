@@ -7,7 +7,11 @@
 
 value_input = int(input("Введіть ціле невід'ємне число: "))
 value_counter = [i for i in range(1, (value_input + 1))]
-result = [i**3 for i in value_counter]
-print(result)
+result = 0
 
-# for value in value_input:
+for item in value_counter:
+    if item % 3 == 0:
+        continue
+    result += item ** 3
+else:
+    print('Сума кубів усіх чисел. Окрім чисел, кратних трьом: ', result)

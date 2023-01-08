@@ -9,5 +9,5 @@
 
 old_list = [5, 'eee', 6, [4, 5], 5.7, 9, 'uuoo']
 
-result = new_list(map(lambda a: int(5) = str('5'), old_list))
-print(list(result))
+new_list = list(map(lambda old_list: str(old_list) if type(old_list) == int else old_list, old_list))
+print(new_list)

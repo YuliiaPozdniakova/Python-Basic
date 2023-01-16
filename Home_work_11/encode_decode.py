@@ -17,3 +17,4 @@ str_data_latin = str_data_2.encode("Latin1")
 print(str_data_latin)
 str_data_latin_2 = str_data_latin.decode("Latin1")
 print(str_data_latin_2)
+

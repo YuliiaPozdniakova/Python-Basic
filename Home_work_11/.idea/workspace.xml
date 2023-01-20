@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4c010750-d894-453b-9112-fed96062a53a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/add_to_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decode_encode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/encode_decode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/Home_work_10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_10/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/Home_work_4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_4/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/Home_work_5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/Home_work_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_6/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/Home_work_7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_7/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/Home_work_8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/Home_work_9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home_work_9/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

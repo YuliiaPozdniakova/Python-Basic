@@ -2,8 +2,6 @@
 # состоящий из 2-х элементов – имя(str), возраст(int). Сделать около 5-6 элементов словаря.
 # записать данный словарь на диск в json-файл.
 #
-# data_dict = {x: {y: [i for i in range(i, i +2)] for y in 'XZY'} for x, i in zip('ABC', range(2))}
-# print(data_dict)
 
 import random
 import json

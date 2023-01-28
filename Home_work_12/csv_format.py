@@ -9,30 +9,26 @@ with open('data_file.json') as write_dict:
     output_data = json.load(write_dict)
 
 
-name_of_fields = ['Person', 'Id', 'Name', 'Age', 'Phone']
-fields = []
+name_of_fields = ['', 'Id', 'Name', 'Age', 'Phone']
 
-for item in output_data:
-    value = output_data[item]
-    value.insert(1, item)
-    value.insert(0, 'Person')
-    fields.append(value)
+if len(name_of_fields) > 0:
+    fields = []
+    counter = 0
+    for item in output_data:
+        value = output_data[item]
+        value.insert(-len(value), item)
+        counter +=1
+        value.insert(0, f'Person {counter}')
+        num = str(random.randint(8095, 999999999)).zfill(9)
+        value.insert(len(value) + 1, num)
+        fields.append(value)
+    print(fields)
 
-# додавати рядок персон і поряд його "номер". можливо використати функцію енумерейт і змінити точку відлику з 0 на 1
-# змінити функцію генерації мобільних номерів на номери з реальними кодами операторів. Зробити обрання коду випадковим
-# прописати додавання телефону в кінець списку. можливо використати екстенд
 
-print(fields)
 
-# with open('data_csv.csv', mode='w', encoding='utf-8') as write_file:
-#     file_writer = csv.writer(write_file)
-#     file_writer.writerow(name_of_fields)
-#     for item in fields:
-#         file_writer.writerow(item)
+    with open('data_csv.csv', mode='w', encoding='utf-8') as write_file:
+        file_writer = csv.writer(write_file)
+        file_writer.writerow(name_of_fields)
+        for item in fields:
+            file_writer.writerow(item)
 
-# phone_list = []
-# while len(phone_list) < 10:
-#     num = str(random.randint(0, 999999999)).zfill(9)
-#     if not num in phone_list:
-#         phone_list.append(num)
-# # print(phone_list)

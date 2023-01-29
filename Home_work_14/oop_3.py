@@ -6,7 +6,7 @@
 import math
 
 
-class Point():
+class Point(object):
 
     def __init__(self, x=0, y=0):
         self.x = x
@@ -37,7 +37,7 @@ class Circle(Point):
         return self.radius == other.radius
 
     def __str__(self):
-        return super().__str__()[:-1] + f', radius={self.radius})'
+        return f'(radius={self.radius}, ' + super().__str__()[1:]
 
     def __add__(self, other):
         x = self.x + other.x
@@ -45,8 +45,14 @@ class Circle(Point):
         radius = self.radius + other.radius
         return Circle(radius, x, y)
 
-    def __add__(self, other):
-        if 
+    def __sub__(self, other):
+        x = self.x - other.x
+        y = self.y - other.y
+        if self.radius == other.radius:
+            return Point(x, y)
+        else:
+            radius = self.radius - other.radius
+            return Circle(radius, x, y)
 
     def edge_distance_from_origin(self):
         return abs(self.distance_from_origin() - self.radius)
@@ -56,3 +62,10 @@ class Circle(Point):
 
     def area(self):
         return math.pi * (self.radius**2)
+
+
+a = Circle(1, 4, 4)
+b = Circle(1, 2, 2)
+
+c = a - b
+print(c)

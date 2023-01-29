@@ -24,7 +24,7 @@ if len(name_of_fields) > 0:
         fields.append(value)
 
 
-    with open('data_csv.csv', mode='w', encoding='utf-8') as write_file:
+    with open('data_csv.csv', mode='w', encoding='utf-8', newline='') as write_file:
         file_writer = csv.writer(write_file)
         file_writer.writerow(name_of_fields)
         for item in fields:

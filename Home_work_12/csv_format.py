@@ -17,13 +17,11 @@ if len(name_of_fields) > 0:
     for item in output_data:
         value = output_data[item]
         value.insert(-len(value), item)
-        counter +=1
+        counter += 1
         value.insert(0, f'Person {counter}')
         num = str(random.randint(8095, 999999999)).zfill(9)
         value.insert(len(value) + 1, num)
         fields.append(value)
-    print(fields)
-
 
 
     with open('data_csv.csv', mode='w', encoding='utf-8') as write_file:

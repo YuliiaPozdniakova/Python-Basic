@@ -15,6 +15,3 @@ class String(str):
             return f'{s}'
 
 
-new_str = String('1777') + 3
-print(type(new_str))
-print(new_str)

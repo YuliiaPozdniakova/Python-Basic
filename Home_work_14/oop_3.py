@@ -46,12 +46,14 @@ class Circle(Point):
         return Circle(radius, x, y)
 
     def __sub__(self, other):
-        x = self.x - other.x
-        y = self.y - other.y
+        x = abs(self.x - other.x)
+        # x = self.x - other.x  - якщо по модулю тільки радіуси
+        y = abs(self.y - other.y)
+        #  y = self.y - other.y  - якщо по модулю тільки радіуси
         if self.radius == other.radius:
             return Point(x, y)
         else:
-            radius = self.radius - other.radius
+            radius = abs(self.radius - other.radius)
             return Circle(radius, x, y)
 
     def edge_distance_from_origin(self):
@@ -65,7 +67,7 @@ class Circle(Point):
 
 
 a = Circle(1, 4, 4)
-b = Circle(1, 2, 2)
+b = Circle(8, 7, 5)
 
 c = a - b
 print(c)

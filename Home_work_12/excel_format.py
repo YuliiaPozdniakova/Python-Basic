@@ -21,3 +21,4 @@ with open('data_csv.csv', encoding='utf-8') as read_file:
             sheet.cell(row=idx + 1, column=parent_idx + 1, value=item)
 
 wb.save(filename=new_file)
+

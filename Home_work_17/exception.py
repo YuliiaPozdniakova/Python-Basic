@@ -60,5 +60,3 @@ class Calculator(object):
             return round(res, 3)
         except TypeError:
             return 'Ви ввели від\'ємне значення або не число'
-
-

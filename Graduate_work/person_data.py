@@ -20,15 +20,17 @@ class Person:
         self.death_date = death_date
 
     @staticmethod
-    def age_calculate(born_date, death_date=0):
-        born_day = int(born_date[:2])
-        born_month = int(born_date[3:5])
-        born_year = int(born_date[6:10])
+    def age_calculate(born_date, death_date=None):
+        born = born_date.split('.')
+        born_day = int(born[0])
+        born_month = int(born[1])
+        born_year = int(born[2])
 
         if death_date:
-            death_day = int(death_date[:2])
-            death_month = int(death_date[3:5])
-            death_year = int(death_date[6:10])
+            death = death_date.split('.')
+            death_day = int(death[0])
+            death_month = int(death[1])
+            death_year = int(death[2])
 
             age = death_year - born_year
             if death_month < born_month:
@@ -53,8 +55,8 @@ class Person:
         if not self.name.isalpha():
             raise Exception('Use only letters to enter the name \n')
 
-        if len(self.gender) > 0 and not self.gender.isalpha():
-            raise Exception('Use only letters to enter the gender \n')
+        if len(self.gender) > 0 and self.gender.lower() not in ('m', 'f', 'м', 'ж'):
+            raise Exception('Enter only "m"/"м" or "f"/"ж" for gender \n')
 
         if len(self.surname) > 0 and not self.surname.isalpha():
             raise Exception('Use only letters to enter the surname\n')

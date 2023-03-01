@@ -63,13 +63,15 @@ class Storage:
 
             for item in find_list:
                 if item.endswith(',\r\n'):
-                    item_1 = item[:-3]
-                    born_date = item_1[-10:]
+                    item_1 = item.strip(',\r\n')
+                    item_2 = item_1.split(',')
+                    born_date = item_2[-1]
                     death_date = 0
                 else:
                     item_1 = item
-                    death_date = item_1[-12:-2]
-                    born_date = item_1[-23:-13]
+                    item_2 = item_1.split(',')
+                    death_date = item_2[-1]
+                    born_date = item_2[-2]
 
                 print(f'{item_1}, age: {Person.age_calculate(born_date, death_date)}')
 
